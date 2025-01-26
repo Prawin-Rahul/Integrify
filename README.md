@@ -34,8 +34,8 @@ Before running the application, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <git@github.com:Prawin-Rahul/hubspot_api_integration.git>
-cd INTEGRATIONS_TECHNICAL_ASSESSMENT
+git clone <git@github.com:Prawin-Rahul/Integrify.git>
+cd Integrify
 ```
 
 ### 2. Set Up the Backend .env File
@@ -67,12 +67,28 @@ REDIS_HOST=redis
 docker-compose up --build
 ```
 
-### 4. Access the Application
+### 4. If You Encounter react-scripts: not found Issue
+
+while running the frontend container , If you Encounter
+
+```
+sh: react-scripts: not found
+```
+
+Navigate to the frontend directory:
+
+```bash
+npm install react-scripts
+```
+
+Again bring up the container
+
+### 5. Access the Application
 
 - [Frontend]: Access the API at (http://localhost:3000 ) .
 - [Backend]: Access the API at (http://localhost:8000).
 
-### 5. Stopping the Application
+### 6. Stopping the Application
 
 ```bash
 docker-compose down
