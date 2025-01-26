@@ -2,14 +2,12 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY package.json /app/
-COPY package-lock.json /app/
+COPY package.json package-lock.json /app/
 
-RUN npm install
+RUN npm install && npm install react-scripts
 
 COPY . /app/
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
-
+CMD ["npm", "start"]
