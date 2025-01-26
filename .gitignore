@@ -1,3 +1,4 @@
 .env
 __pycache__
 .integration
+node_modules/

@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json package-lock.json /app/
 
-RUN npm install && npm install react-scripts
+RUN npm install
 
 COPY . /app/
 
